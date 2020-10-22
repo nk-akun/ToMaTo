@@ -7,6 +7,8 @@ from django import VERSION as DJANGO_VERSION
 CONFIG_YAML_PATH = "/etc/tomato/config.yaml"
 TOMATO_MODULE = "web"
 
+ALLOWED_HOSTS = ['*']
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
