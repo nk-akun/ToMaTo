@@ -21,6 +21,7 @@ CONFIG_PATHS = ["/etc/tomato/tomato-ctl.conf", os.path.expanduser("~/.tomato/tom
 # basic functions
 
 def get_interface_ip_address(ifname):
+	ifname = str(ifname)
 	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 	return socket.inet_ntoa(fcntl.ioctl(
 		s.fileno(),
